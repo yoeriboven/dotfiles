@@ -7,7 +7,8 @@ tap 'homebrew/bundle'
 # Binaries
 #brew 'awscli'
 #brew 'bash' # Latest Bash version
-#brew 'coreutils' # Those that come with macOS are outdated
+brew 'bat'
+brew 'coreutils' # Those that come with macOS are outdated
 #brew 'ffmpeg'
 #brew 'gh'
 brew 'git'
