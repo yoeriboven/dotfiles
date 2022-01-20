@@ -18,14 +18,6 @@ brew 'mas' # Mac App Store manager
 #brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 #brew 'svn'
 #brew 'trash' # Manage the Trash bin
-#brew 'zlib' # Needed for Memcached
-
-# Spatie Medialibrary
-#brew 'jpegoptim'
-#brew 'optipng'
-#brew 'pngquant'
-#brew 'svgo'
-#brew 'gifsicle'
 
 # Development
 #brew 'php'
