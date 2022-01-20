@@ -1,3 +1,8 @@
+# Easier navigation: .., ... and ....
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+
 # Shortcuts
 alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
 alias reloadshell="source $HOME/.zshrc"
