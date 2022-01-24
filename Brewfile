@@ -55,6 +55,8 @@ cask 'github'
 #cask 'phpstorm'
 #cask 'ray'
 #cask 'screenflow'
+cask 'sequel-ace'
+cask 'sequel-pro'
 #cask 'signal'
 #cask 'skype'
 #cask 'slack'
@@ -72,13 +74,13 @@ cask 'vlc'
 #cask 'zoom'
 
 # Quicklook
-#cask 'qlmarkdown'
-#cask 'quicklook-json'
+cask 'qlmarkdown'
+cask 'quicklook-json'
 
 # Fonts
-#cask 'font-lato'
-#cask 'font-open-sans'
-#cask 'font-roboto'
+cask 'font-lato'
+cask 'font-open-sans'
+cask 'font-roboto'
 #cask 'font-source-code-pro-for-powerline'
 #cask 'font-source-code-pro'
 #cask 'font-source-sans-pro'
@@ -88,8 +90,6 @@ cask 'vlc'
 mas '1Blocker', id: 1365531024
 #mas 'Byword', id: 420212497
 #mas 'Giphy Capture', id: 668208984
-#mas 'Keynote', id: 409183694
-#mas 'Numbers', id: 409203825
 #mas 'Spark', id: 1176895641
 #mas 'Speedtest', id: 1153157709
 #mas 'Things', id: 904280696
