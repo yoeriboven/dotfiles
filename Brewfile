@@ -16,7 +16,7 @@ brew 'git'
 brew 'mackup'
 brew 'mas' # Mac App Store manager
 #brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
-#brew 'svn'
+brew 'svn'
 #brew 'trash' # Manage the Trash bin
 
 # Development
@@ -51,8 +51,9 @@ cask 'github'
 #cask 'google-chrome'
 #cask 'gpg-suite'
 #cask 'imageoptim'
-#cask 'insomnia'
+cask 'insomnia'
 #cask 'phpstorm'
+cask 'plex-media-server'
 #cask 'ray'
 #cask 'screenflow'
 cask 'sequel-ace'
@@ -60,6 +61,7 @@ cask 'sequel-pro'
 #cask 'signal'
 #cask 'skype'
 #cask 'slack'
+cask 'spotify'
 #cask 'steam'
 cask 'sublime-text'
 #cask 'tableplus'
