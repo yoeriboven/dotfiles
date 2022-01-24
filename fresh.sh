@@ -26,7 +26,7 @@ brew bundle
 # pecl install memcached imagick redis
 
 # Install global Composer packages
-/usr/local/bin/composer global require laravel/installer laravel/valet friendsofphp/php-cs-fixer
+composer global require laravel/installer laravel/valet friendsofphp/php-cs-fixer
 
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install
