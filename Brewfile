@@ -35,11 +35,12 @@ brew 'composer'
 #brew 'yarn'
 
 # Apps
-#cask '1password'
+cask '1password'
 #cask '1password-cli'
 #cask 'aerial'
 #cask 'alfred'
 #cask 'caffeine'
+cask 'daisydisk'
 #cask 'dbngin'
 #cask 'discord'
 #cask 'docker'
