@@ -1,3 +1,4 @@
+backblaze moet apart
 # Note
 - Bekijk ook ssh.sh
 - Werkt path?
