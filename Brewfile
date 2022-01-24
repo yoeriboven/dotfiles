@@ -84,6 +84,7 @@ brew 'composer'
 #cask 'font-source-serif-pro'
 
 # Mac App Store
+mas '1Blocker', id: 1365531024
 #mas 'Byword', id: 420212497
 #mas 'Giphy Capture', id: 668208984
 #mas 'Keynote', id: 409183694
