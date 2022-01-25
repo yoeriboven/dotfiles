@@ -9,6 +9,7 @@ alias reloadshell="source $HOME/.zshrc"
 alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
 alias zshconfig="subl ~/.zshrc"
 alias c="clear"
+alias l="ls -alh"
 
 # Directories
 alias dotfiles="cd $DOTFILES"
