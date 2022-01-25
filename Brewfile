@@ -46,6 +46,7 @@ cask 'daisydisk'
 #cask 'docker'
 #cask 'figma'
 cask 'firefox'
+cask 'flux'
 cask 'github'
 #cask 'google-backup-and-sync'
 #cask 'google-chrome'
@@ -90,6 +91,7 @@ cask 'font-roboto'
 
 # Mac App Store
 mas '1Blocker', id: 1365531024
+mas 'Magnet', id: 441258766
 mas 'Tweetbot', id: 557168941
 #mas 'Byword', id: 420212497
 #mas 'Giphy Capture', id: 668208984
