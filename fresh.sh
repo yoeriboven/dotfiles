@@ -46,6 +46,9 @@ ln -s $HOME/.dotfiles/.phpcsfixer $HOME/.phpcsfixer
 # Symlink the Mackup config file to the home directory
 ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
 
+# Start Redis
+brew services restart redis
+
 # Set macOS preferences
 # We will run this last because this will reload the shell
 # source .macos
