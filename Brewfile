@@ -16,10 +16,10 @@ brew 'wget'
 # Development
 brew 'composer'
 #brew 'meilisearch'
-#brew 'mysql' Forgot whether we should instal this
+#brew 'mysql' Forgot whether we should install this (brew services start mysql)
 #brew 'node'
 brew 'npm'
-#brew 'redis' Forgot whether we should instal this
+#brew 'redis' Forgot whether we should install this
 
 # Apps
 cask '1password'
