@@ -36,16 +36,16 @@ $HOME/.composer/vendor/bin/valet install
 mkdir $HOME/Sites
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
-#rm -rf $HOME/.zshrc
-#ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
+rm -rf $HOME/.zshrc
+ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
 # Removes .phpcsfixer from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.phpcsfixer
 ln -s $HOME/.dotfiles/.phpcsfixer $HOME/.phpcsfixer
 
 # Removes .gitignore from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
-#rm -rf $HOME/.zshrc
-#ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
+#rm -rf $HOME/.gitignore
+#ln -s $HOME/.dotfiles/.gitignore $HOME/.gitignore
 
 # Symlink the Mackup config file to the home directory
 #ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
