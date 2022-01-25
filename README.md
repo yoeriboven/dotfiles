@@ -1,4 +1,9 @@
 backblaze moet apart
+natuurlijk scrollen uit
+tap to touch
+finder linkerbalk
+dock
+mail
 # Note
 - Bekijk ook ssh.sh
 - Werkt path?
