@@ -22,8 +22,12 @@ brew bundle
 # Set default MySQL root password and auth type.
 # mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;"
 
+# Install Pickle
+sudo wget https://github.com/FriendsOfPHP/pickle/releases/latest/download/pickle.phar -O /usr/local/bin/pickle
+sudo chmod +x /usr/local/bin/pickle
+
 # Install PHP extensions with PECL
-# pecl install memcached imagick redis
+pickle install redis
 
 # Install global Composer packages
 composer global require laravel/installer laravel/valet friendsofphp/php-cs-fixer
