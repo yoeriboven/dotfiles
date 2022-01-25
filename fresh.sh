@@ -43,12 +43,8 @@ ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 rm -rf $HOME/.phpcsfixer
 ln -s $HOME/.dotfiles/.phpcsfixer $HOME/.phpcsfixer
 
-# Removes .gitignore from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
-#rm -rf $HOME/.gitignore
-#ln -s $HOME/.dotfiles/.gitignore $HOME/.gitignore
-
 # Symlink the Mackup config file to the home directory
-#ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
+ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
 
 # Set macOS preferences
 # We will run this last because this will reload the shell
