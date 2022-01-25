@@ -12,6 +12,9 @@ if test ! $(which brew); then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
+#echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
+#eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Update Homebrew recipes
 brew update
 
@@ -52,6 +55,11 @@ ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
 
 # Start Redis
 brew services restart redis
+
+# necessary?
+# Create a directory for global packages and tell npm where to store globally installed packages
+#mkdir "${HOME}/.npm-packages"
+#npm config set prefix "${HOME}/.npm-packages"
 
 # Set macOS preferences
 # We will run this last because this will reload the shell
