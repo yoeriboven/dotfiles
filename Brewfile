@@ -3,6 +3,7 @@ tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
+tap 'nicoverbruggen/homebrew-cask'
 
 # Binaries
 brew 'bat'
@@ -20,6 +21,7 @@ brew 'composer'
 #brew 'node'
 brew 'npm'
 #brew 'redis' Forgot whether we should install this
+cask 'phpmon'
 
 # Apps
 cask '1password'
