@@ -4,6 +4,7 @@
  - Enable tap to click
  - Finder sidebar: Desktop, Home, Apps, Documents, Downloads
  - Setup Mail.app
+ - Add SSH Key to DigitalOcean and Laravel Forge.
 
 # Dries's Dotfiles
 
