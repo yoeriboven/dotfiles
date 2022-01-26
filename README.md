@@ -1,13 +1,10 @@
-backblaze moet apart
-natuurlijk scrollen uit
-tap to touch
-finder linkerbalk
-dock
-mail
-# Note
-- Bekijk ook ssh.sh
-- Werkt path?
-- Werkt phpcsfixer / gitignore.global? Anders symlinken.
+## Manual
+ - Install Backblaze from `/opt/homebrew/Caskroom/backblaze/{version}`
+ - Disable natural scrolling
+ - Enable tap to click
+ - Finder sidebar: Desktop, Home, Apps, Documents, Downloads
+ - Setup Mail.app
+
 # Dries's Dotfiles
 
 This repository serves as my way to help me setup and maintain my Mac. It takes the effort out of installing everything manually. Everything needed to install my preferred setup of macOS is detailed in this readme. Feel free to explore, learn and copy parts for your own dotfiles. Enjoy! :smile:
