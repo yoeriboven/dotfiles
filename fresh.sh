@@ -33,7 +33,7 @@ sudo chmod +x /usr/local/bin/pickle
 pickle install redis
 
 # Install global Composer packages
-composer global require laravel/installer laravel/valet friendsofphp/php-cs-fixer
+composer global require laravel/installer laravel/valet friendsofphp/php-cs-fixer spatie/visit
 
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install

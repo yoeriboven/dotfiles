@@ -6,10 +6,15 @@ alias ....="cd ../../.."
 # Shortcuts
 alias copyssh="pbcopy < $HOME/.ssh//id_ed25519.pub"
 alias reloadshell="source $HOME/.zshrc"
-alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
+alias phpstorm='open -a /Applications/PhpStorm.app'
 alias zshconfig="subl ~/.zshrc"
+alias gitignore="subl ~/.dotfiles/.gitignore_global"
+alias aliases="subl ~/.dotfiles/aliases.zsh"
+alias functions="subl ~/.dotfiles/functions.zsh"
 alias c="clear"
 alias l="ls -alh"
+
+alias ph="phpstorm . && github ."
 
 # Directories
 alias dotfiles="cd $DOTFILES"
@@ -38,6 +43,9 @@ alias cfresh="rm -rf vendor/ composer.lock && composer i"
 alias phpunit="vendor/bin/phpunit"
 alias p="phpunit"
 alias pu="phpunit"
+alias pf="phpunit --filter"
+
+alias phpstan="./vendor/bin/phpstan analyse"
 
 # Laravel
 alias a="php artisan"

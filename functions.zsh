@@ -30,3 +30,16 @@ function opendb () {
    echo "Opening ${DB_URL}"
    open $DB_URL
 }
+
+function fixer {
+    if [ -z "$@" ]
+    then
+        php-cs-fixer
+    else
+        php-cs-fixer $@ --config='/Users/yoeriboven_werk/.dotfiles/.php-cs-fixer.php'
+    fi
+}
+
+function fix {
+    php-cs-fixer fix ./ --config='/Users/yoeriboven_werk/.dotfiles/.php-cs-fixer.php'
+}
