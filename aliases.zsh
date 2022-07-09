@@ -55,3 +55,13 @@ alias mfs='php artisan migrate:fresh --seed'
 
 # Redis
 alias flush-redis="redis-cli FLUSHALL"
+
+# Environment
+alias php81="brew unlink php && brew link --overwrite --force php"
+alias php73="brew unlink php && brew link --overwrite --force php@7.3"
+
+alias node18="brew unlink node && brew link --overwrite --force node"
+alias node14="brew unlink node && brew link --overwrite --force node@14"
+
+alias env-default="node18"
+alias env-videoup="node14"

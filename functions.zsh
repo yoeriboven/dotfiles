@@ -12,6 +12,8 @@ function db {
         mysql -uroot -e "drop database $2"
     elif [ "$1" = "list" ]; then
         mysql -uroot -e "show databases" | perl -p -e's/\|| *//g'
+    elif [ "$1" = "list" ]; then
+        opendb
     fi
 }
 
@@ -42,4 +44,8 @@ function fixer {
 
 function fix {
     php-cs-fixer fix ./ --config='/Users/yoeriboven_werk/.dotfiles/.php-cs-fixer.php'
+}
+
+function cleanhorizon {
+    flush-redis && mfs && a horizon
 }
