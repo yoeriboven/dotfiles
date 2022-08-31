@@ -42,3 +42,9 @@ Thumbs.db
 # Caches #
 ######################
 .php-cs-fixer.cache
+
+# PHP #
+######################
+.phpstorm.meta.php
+_ide_helper.php
+_ide_helper_models.php

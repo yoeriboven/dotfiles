@@ -52,6 +52,9 @@ alias a="php artisan"
 alias m='php artisan migrate'
 alias mf='php artisan migrate:fresh'
 alias mfs='php artisan migrate:fresh --seed'
+alias horizon='php artisan horizon'
+
+alias pint="vendor/bin/pint"
 
 # Redis
 alias flush-redis="redis-cli FLUSHALL"
