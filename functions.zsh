@@ -8,6 +8,8 @@ function db {
         mysql -uroot -e "drop database $2; create database $2"
     elif [ "$1" = "create" ]; then
         mysql -uroot -e "create database $2"
+    elif [ "$1" = "make" ]; then
+        mysql -uroot -e "create database $2"
     elif [ "$1" = "drop" ]; then
         mysql -uroot -e "drop database $2"
     elif [ "$1" = "list" ]; then
@@ -48,4 +50,70 @@ function fix {
 
 function cleanhorizon {
     flush-redis && mfs && a horizon
+}
+
+function redis-reconfigure() {
+    INSTALLATION=`readlink -f $(brew --prefix php)/pecl` && \
+
+    echo "Ok to delete pecl folder from new PHP installation directory?" && \
+
+    confirm && \
+
+    # Clean up new installation
+    rm -f "$INSTALLATION/pecl" && \
+
+    echo "Ok to force install Redis?" && \
+
+    confirm && \
+
+    # Install Redis
+    echo no | pecl install -f redis && \
+
+    # List installed files by Redis
+    FILES=$(echo $(pecl list-files redis | tail -n 1)) && \
+
+    # Get the path to the actual .so php extension file
+    SOURCE=$(echo "$FILES" | cut -d " " -f2) && \
+
+    # Actual target PHP looks for it
+    TARGET=/opt/homebrew/Cellar/php/pecl/redis.so && \
+
+    echo "About to link $SOURCE (new extension) to $TARGET (location PHP looks for extension)" && \
+
+    confirm && \
+
+    # Symlink the installed extension from the wrong to the right location
+    mkdir -p $(dirname $TARGET) && \
+    ln -nfs $SOURCE $TARGET && \
+
+    echo "You might have to run 'valet restart' to fix the link."
+}
+
+function confirm() {
+    # call with a prompt string or use a default
+    read response"?Are you sure? [y/N] "
+    case "$response" in
+        [yY][eE][sS]|[yY])
+            true
+            ;;
+        *)
+            false
+            ;;
+    esac
+}
+
+function p() {
+   if [ -f vendor/bin/pest ]; then
+      vendor/bin/pest "$@"
+   else
+      vendor/bin/phpunit "$@"
+   fi
+}
+
+function pf() {
+   if [ -f vendor/bin/pest ]; then
+      vendor/bin/pest --filter "$@"
+   else
+      vendor/bin/phpunit --filter "$@"
+   fi
 }

@@ -6,7 +6,6 @@ alias ....="cd ../../.."
 # Shortcuts
 alias copyssh="pbcopy < $HOME/.ssh//id_ed25519.pub"
 alias reloadshell="source $HOME/.zshrc"
-alias phpstorm='open -a /Applications/PhpStorm.app'
 alias zshconfig="subl ~/.zshrc"
 alias gitignore="subl ~/.dotfiles/.gitignore_global"
 alias aliases="subl ~/.dotfiles/aliases.zsh"
@@ -40,11 +39,6 @@ alias ci="composer install"
 alias cda="composer dump-autoload -o"
 alias cfresh="rm -rf vendor/ composer.lock && composer i"
 
-alias phpunit="vendor/bin/phpunit"
-alias p="phpunit"
-alias pu="phpunit"
-alias pf="phpunit --filter"
-
 alias phpstan="./vendor/bin/phpstan analyse"
 
 # Laravel
@@ -56,15 +50,25 @@ alias horizon='php artisan horizon'
 
 alias pint="vendor/bin/pint"
 
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
+
+alias minio='minio server /tmp/minio --address :9001'
+
 # Redis
 alias flush-redis="redis-cli FLUSHALL"
 
 # Environment
-alias php81="brew unlink php && brew link --overwrite --force php"
+alias php82="brew unlink php && brew link --overwrite --force php@8.2"
+alias php81="brew unlink php && brew link --overwrite --force php@8.1"
 alias php73="brew unlink php && brew link --overwrite --force php@7.3"
 
-alias node18="brew unlink node && brew link --overwrite --force node"
+alias node20="brew install node"
 alias node14="brew unlink node && brew link --overwrite --force node@14"
 
-alias env-default="node18"
+alias env-default="brew reinstall node"
 alias env-videoup="node14"
+
+# Qbixx VPN Jumpbox
+# https://www.reddit.com/r/WireGuard/comments/10a55y8/wireguard_not_working_on_macos_13_ventura/j47g7h6/
+alias vpnup="sudo wg-quick up wg0"
+alias vpndown="sudo wg-quick down wg0"
