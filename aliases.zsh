@@ -3,6 +3,11 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 
+# SSH
+alias sshpp="ssh forge@67.205.143.169"
+alias sshvideoup="ssh forge@157.245.142.172"
+alias sshmain="ssh forge@68.183.114.122"
+
 # Shortcuts
 alias copyssh="pbcopy < $HOME/.ssh//id_ed25519.pub"
 alias reloadshell="source $HOME/.zshrc"
