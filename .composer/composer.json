@@ -1,0 +1,10 @@
+{
+    "require": {
+        "laravel/installer": "^4.2",
+        "laravel/valet": "^4.0",
+        "friendsofphp/php-cs-fixer": "^3.5",
+        "spatie/visit": "^1.0",
+        "beyondcode/expose": "^2.2",
+        "spatie/global-ray": "^1.0"
+    }
+}

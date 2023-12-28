@@ -89,19 +89,6 @@ function redis-reconfigure() {
     echo "You might have to run 'valet restart' to fix the link."
 }
 
-function confirm() {
-    # call with a prompt string or use a default
-    read response"?Are you sure? [y/N] "
-    case "$response" in
-        [yY][eE][sS]|[yY])
-            true
-            ;;
-        *)
-            false
-            ;;
-    esac
-}
-
 function p() {
    if [ -f vendor/bin/pest ]; then
       vendor/bin/pest "$@"
