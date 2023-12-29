@@ -1,9 +1,0 @@
-{
-    "config": {},
-    "repositories": [
-        {
-            "type": "path",
-            "url": "~/Sites/packages/laravel-log-db"
-        }
-    ]
-}
