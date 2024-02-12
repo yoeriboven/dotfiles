@@ -1,6 +1,7 @@
 # Binaries
 brew 'bat'
 brew 'mas' # Mac App Store manager
+brew 'mysql'
 
 # Apps
 cask '1password'

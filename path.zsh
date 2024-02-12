@@ -1,3 +1,5 @@
+# Do we need this file???
+
 # Load Composer tools
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 

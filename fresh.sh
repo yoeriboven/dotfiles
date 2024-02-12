@@ -49,10 +49,14 @@ echo 'Symlinking .zshrc'
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
-echo 'Installing nvm, node and npm'
-git clone https://github.com/lukechilds/zsh-nvm.git ~/.zsh-nvm
-source $HOME/.zsh-nvm/zsh-nvm.plugin.zsh
-nvm install --lts
+# Laravel Herd also ships with this
+#echo 'Installing nvm, node and npm'
+#git clone https://github.com/lukechilds/zsh-nvm.git ~/.zsh-nvm
+#source $HOME/.zsh-nvm/zsh-nvm.plugin.zsh
+#nvm install --lts
+
+# Start mysql
+brew services start mysql
 
 
 
