@@ -1,3 +1,6 @@
+alias php='herd php'
+alias composer='herd composer'
+
 # Easier navigation: .., ... and ....
 alias ..="cd .."
 alias ...="cd ../.."
@@ -61,19 +64,3 @@ alias minio='minio server /tmp/minio --address :9001'
 
 # Redis
 alias flush-redis="redis-cli FLUSHALL"
-
-# Environment
-alias php82="brew unlink php && brew link --overwrite --force php@8.2"
-alias php81="brew unlink php && brew link --overwrite --force php@8.1"
-alias php73="brew unlink php && brew link --overwrite --force php@7.3"
-
-alias node20="brew install node"
-alias node14="brew unlink node && brew link --overwrite --force node@14"
-
-alias env-default="brew reinstall node"
-alias env-videoup="node14"
-
-# Qbixx VPN Jumpbox
-# https://www.reddit.com/r/WireGuard/comments/10a55y8/wireguard_not_working_on_macos_13_ventura/j47g7h6/
-alias vpnup="sudo wg-quick up wg0"
-alias vpndown="sudo wg-quick down wg0"
