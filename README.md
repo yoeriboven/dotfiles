@@ -1,4 +1,5 @@
 ## Manual
+- [clone dotfiles]
 - Disable natural scrolling
 - Enable tap to click
 - Finder sidebar: Desktop, Home, Apps, Documents, Downloads, Sites
