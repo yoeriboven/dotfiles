@@ -7,19 +7,19 @@ echo "Setting up your Mac..."
 #  /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/HEAD/tools/install.sh)"
 #fi
 
-echo 'Installing Homebrew'
-if test ! $(which brew); then
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-fi
+#echo 'Installing Homebrew'
+#if test ! $(which brew); then
+#  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+#fi
 
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)"
+#echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
+#eval "$(/opt/homebrew/bin/brew shellenv)"
 
-brew update
+#brew update
 
-echo 'Installing Brewfile dependencies'
-brew tap homebrew/bundle
-brew bundle
+#echo 'Installing Brewfile dependencies'
+#brew tap homebrew/bundle
+#brew bundle
 
 echo 'Symlinking global .gitignore'
 ln -s ~/.dotfiles/.gitignore_global ~/.gitignore_global 
@@ -32,15 +32,6 @@ mkdir $HOME/Sites
 echo 'Symlinking .zshrc'
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
-
-# Laravel Herd also ships with this
-#echo 'Installing nvm, node and npm'
-#git clone https://github.com/lukechilds/zsh-nvm.git ~/.zsh-nvm
-#source $HOME/.zsh-nvm/zsh-nvm.plugin.zsh
-#nvm install --lts
-
-# Start mysql
-# brew services start mysql
 
 echo 'Finished setting up your mac!'
 echo ''
