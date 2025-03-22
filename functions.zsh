@@ -91,3 +91,7 @@ function pf() {
       vendor/bin/phpunit --filter "$@"
    fi
 }
+
+function pr() {
+    while php artisan test --filter "$1" --stop-on-failure; do echo; done
+}

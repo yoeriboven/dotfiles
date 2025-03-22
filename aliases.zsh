@@ -64,3 +64,6 @@ alias minio='minio server /tmp/minio --address :9001'
 
 # Redis
 alias flush-redis="redis-cli FLUSHALL"
+
+# Playwright
+alias fixplaywright="ln -nfs /Users/Shared/DBngin/mysql/8.0.33/bin/mysqldump /usr/local/bin"
