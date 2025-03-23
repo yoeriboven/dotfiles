@@ -13,7 +13,6 @@ alias sshmain="ssh forge@68.183.114.122"
 
 # Shortcuts
 alias copyssh="pbcopy < $HOME/.ssh//id_ed25519.pub"
-alias reloadshell="source $HOME/.zshrc"
 alias zshconfig="subl ~/.zshrc"
 alias gitignore="subl ~/.dotfiles/.gitignore_global"
 alias aliases="subl ~/.dotfiles/aliases.zsh"
@@ -25,11 +24,9 @@ alias ph="phpstorm . && github ."
 
 # Directories
 alias dotfiles="cd $DOTFILES"
-alias library="cd $HOME/Library"
 alias sites="cd $HOME/Sites"
 
 # JS
-alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
 alias watch="npm run watch"
 
 # Git
@@ -57,10 +54,6 @@ alias mfs='php artisan migrate:fresh --seed'
 alias horizon='php artisan horizon'
 
 alias pint="vendor/bin/pint"
-
-alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
-
-alias minio='minio server /tmp/minio --address :9001'
 
 # Redis
 alias flush-redis="redis-cli FLUSHALL"
