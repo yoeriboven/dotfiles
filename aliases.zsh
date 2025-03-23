@@ -23,7 +23,7 @@ alias l="ls -alh"
 alias ph="phpstorm . && github ."
 
 # Directories
-alias dotfiles="cd $DOTFILES"
+alias dotfiles="cd $HOME/.dotfiles"
 alias sites="cd $HOME/Sites"
 
 # JS

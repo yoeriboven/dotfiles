@@ -1,4 +1,5 @@
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
+export PATH=/Users/Shared/DBngin/mysql/8.0.33/bin:$PATH 
 
 source $HOME/.dotfiles/aliases.zsh
 source $HOME/.dotfiles/functions.zsh
