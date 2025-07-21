@@ -59,4 +59,12 @@ alias pint="vendor/bin/pint"
 alias flush-redis="redis-cli FLUSHALL"
 
 # Playwright
-alias fixplaywright="ln -nfs /Users/Shared/DBngin/mysql/8.0.33/bin/mysqldump /usr/local/bin"
+alias fixplaywright="ln -nfs /Users/Shared/DBngin/mysql/8.0.33/bin/mysql /usr/local/bin"
+
+# Miscellaneous
+alias tunnel="cloudflared tunnel run yoeris-macbook"
+
+# Property hustle
+alias hustle='php /Users/yoeriboven/Sites/p/artisan hustle "$(pwd)"'
+alias hustle:download-zillow-data='php /Users/yoeriboven/Sites/p/artisan hustle:download-zillow-data "$(pwd)"'
+alias hustle:download-zillow-images='php /Users/yoeriboven/Sites/p/artisan hustle:download-zillow-images "$(pwd)"'
