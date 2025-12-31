@@ -45,6 +45,7 @@ alias cda="composer dump-autoload -o"
 alias cfresh="rm -rf vendor/ composer.lock && composer i"
 
 alias phpstan="./vendor/bin/phpstan analyse"
+alias pest="./vendor/bin/pest"
 
 # Laravel
 alias a="php artisan"
@@ -65,6 +66,6 @@ alias fixplaywright="ln -nfs /Users/Shared/DBngin/mysql/8.0.33/bin/mysql /usr/lo
 alias tunnel="cloudflared tunnel run yoeris-macbook"
 
 # Property hustle
-alias hustle='php /Users/yoeriboven/Sites/p/artisan hustle "$(pwd)"'
-alias hustle:download-zillow-data='php /Users/yoeriboven/Sites/p/artisan hustle:download-zillow-data "$(pwd)"'
-alias hustle:download-zillow-images='php /Users/yoeriboven/Sites/p/artisan hustle:download-zillow-images "$(pwd)"'
+alias hustle='php /Users/yoeriboven/Sites/hosmic/artisan hustle "$(pwd)"'
+alias hustle:download-zillow-data='php /Users/yoeriboven/Sites/hosmic/artisan hustle:download-zillow-data "$(pwd)"'
+alias hustle:download-zillow-images='php /Users/yoeriboven/Sites/hosmic/artisan hustle:download-zillow-images "$(pwd)"'
