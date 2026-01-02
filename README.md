@@ -1,5 +1,5 @@
 ## Manual
-- [clone dotfiles]
+- `git clone https://github.com/yoeriboven/dotfiles ~/.dotfiles`
 - Disable natural scrolling
 - Enable tap to click
 - Finder sidebar: Desktop, Home, Apps, Documents, Downloads, Sites
