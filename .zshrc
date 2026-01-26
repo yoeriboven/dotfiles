@@ -18,7 +18,6 @@ export NVM_DIR="/Users/yoeriboven/Library/Application Support/Herd/config/nvm"
 # Herd injected PHP binary.
 export PATH="/Users/yoeriboven/Library/Application Support/Herd/bin/":$PATH
 
-
 # Herd injected PHP 8.3 configuration.
 export HERD_PHP_83_INI_SCAN_DIR="/Users/yoeriboven/Library/Application Support/Herd/config/php/83/"
 
@@ -29,3 +28,9 @@ export HERD_PHP_81_INI_SCAN_DIR="/Users/yoeriboven/Library/Application Support/H
 
 # Herd injected PHP 8.2 configuration.
 export HERD_PHP_82_INI_SCAN_DIR="/Users/yoeriboven/Library/Application Support/Herd/config/php/82/"
+export PATH="$HOME/.local/bin:$PATH"
+
+# Amp CLI
+export PATH="/Users/yoeriboven/.amp/bin:$PATH"
+
+export MYSQL_UNIX_PORT=/tmp/mysql_3306.sock

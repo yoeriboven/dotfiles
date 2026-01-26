@@ -1,0 +1,48 @@
+worktree_add() {
+    local name="$1"
+    local base
+    base="$(basename "$(pwd)")"
+    local worktree="${base}--${name}"
+
+    git worktree add -b "$name" "../${worktree}" main
+
+    cp .env "../${worktree}/.env"
+    cd "../${worktree}"
+
+    sed -i '' "s|^APP_URL=.*|APP_URL=https://${worktree}.test/|" .env
+    sed -i '' "s|^DB_DATABASE=.*|DB_DATABASE=${worktree}|" .env
+
+    mysql --socket /tmp/mysql_3306.sock -uroot -e "create database \`${worktree}\`"
+    composer install
+    php artisan key:generate
+    php artisan migrate --seed
+    npm install
+    npm run build
+    herd secure
+}
+
+worktree_remove() {
+    local worktree
+    worktree="$(basename "$(pwd)")"
+    local project="${worktree%%--*}"
+
+    mysql --socket /tmp/mysql_3306.sock -uroot -e "drop database \`${worktree}\`"
+    herd unsecure
+
+    cd "../${project}"
+    git worktree remove "../${worktree}" --force
+
+}
+
+case "$1" in
+    add)
+        worktree_add "$2"
+        ;;
+    remove)
+        worktree_remove
+        ;;
+    *)
+        echo "Usage: worktree add <name> | worktree remove"
+        return 1
+        ;;
+esac

@@ -1,2 +1,3 @@
 Brewfile.lock.json
 plugins/
+.cloudflared_backup/

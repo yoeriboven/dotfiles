@@ -47,8 +47,3 @@ Thumbs.db
 .phpstorm.meta.php
 _ide_helper.php
 _ide_helper_models.php
-
-# AI helpers in SH project #
-######################
-CLAUDE.md
-.claude/

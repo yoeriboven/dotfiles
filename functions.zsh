@@ -95,3 +95,23 @@ function pf() {
 function pr() {
     while php artisan test --filter "$1" --stop-on-failure; do echo; done
 }
+
+worktree() {
+    source ~/.dotfiles/bin/worktree "$@"
+}
+
+newlaravel() {
+    git clone https://github.com/yoeriboven/scaffold "$1"
+    cd "$1"
+    rm -rf .git
+    git init
+    cp .env.example .env
+    sed -i '' "s|^APP_URL=.*|APP_URL=https://$1.test|" .env
+    sed -i '' "s|^DB_DATABASE=.*|DB_DATABASE=$1|" .env
+    composer install
+    php artisan key:generate
+    php artisan migrate --seed
+    npm install
+    npm run build
+    herd secure
+}
