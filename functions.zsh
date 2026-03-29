@@ -114,4 +114,6 @@ newlaravel() {
     npm install
     npm run build
     herd secure
+    git add .
+    git commit -m "Init"
 }
