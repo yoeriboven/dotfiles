@@ -2,6 +2,7 @@ export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 export PATH=/Users/Shared/DBngin/mysql/8.0.33/bin:$PATH
 export PATH=/Users/Shared/DBngin/redis/7.0.0/bin:$PATH
 export PATH=/Users/yoeriboven/.dotfiles/bin:$PATH
+export PATH="$HOME/.local/bin:$PATH"
 
 source $HOME/.dotfiles/aliases.zsh
 source $HOME/.dotfiles/functions.zsh
