@@ -1,5 +1,6 @@
 alias php='herd php'
 alias composer='herd composer'
+alias subl='zed'
 
 # Easier navigation: .., ... and ....
 alias ..="cd .."
@@ -13,10 +14,10 @@ alias sshmain="ssh forge@68.183.114.122"
 
 # Shortcuts
 alias copyssh="pbcopy < $HOME/.ssh//id_ed25519.pub"
-alias zshconfig="subl ~/.zshrc"
-alias gitignore="subl ~/.dotfiles/.gitignore_global"
-alias aliases="subl ~/.dotfiles/aliases.zsh"
-alias functions="subl ~/.dotfiles/functions.zsh"
+alias zshconfig="zed ~/.zshrc"
+alias gitignore="zed ~/.dotfiles/.gitignore_global"
+alias aliases="zed ~/.dotfiles/aliases.zsh"
+alias functions="zed ~/.dotfiles/functions.zsh"
 alias c="clear"
 alias l="ls -alh"
 

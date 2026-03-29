@@ -4,7 +4,7 @@
 - Enable tap to click
 - Finder sidebar: Desktop, Home, Apps, Documents, Downloads, Sites
 - Install Warp
-- Instal Sublime Text
+- Instal Zed
 - Symlink global `.gitignore`
 ```
 ln -s ~/.dotfiles/.gitignore_global ~/.gitignore_global 
@@ -15,6 +15,10 @@ git config --global core.excludesfile ~/.gitignore_global
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 ```
+- Make bin/ executable
 - Install Herd
+```
+chmod -R +x bin/
+```
 - Run `composer global require beyondcode/expose spatie/global-ray sandersander/composer-link`
 - Return `.ssh` and run `chmod 400 ~/.ssh/id_rsa` or `chmod 600 ~/.ssh/id_rsa` if necessary
