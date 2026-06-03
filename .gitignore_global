@@ -47,3 +47,5 @@ Thumbs.db
 .phpstorm.meta.php
 _ide_helper.php
 _ide_helper_models.php
+
+**/.claude/settings.local.json

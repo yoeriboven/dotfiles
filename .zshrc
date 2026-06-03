@@ -1,5 +1,6 @@
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 export PATH=/Users/Shared/DBngin/mysql/8.0.33/bin:$PATH
+export PATH=/Users/Shared/DBngin/postgresql/18.1/bin:$PATH
 export PATH=/Users/Shared/DBngin/redis/7.0.0/bin:$PATH
 export PATH=/Users/yoeriboven/.dotfiles/bin:$PATH
 export PATH="$HOME/.local/bin:$PATH"
@@ -23,3 +24,11 @@ export PATH="/Users/yoeriboven/Library/Application Support/Herd/bin/":$PATH
 export PATH="/Users/yoeriboven/.amp/bin:$PATH"
 
 export MYSQL_UNIX_PORT=/tmp/mysql_3306.sock
+
+
+# Herd injected PHP 8.3 configuration.
+export HERD_PHP_83_INI_SCAN_DIR="/Users/yoeriboven/Library/Application Support/Herd/config/php/83/"
+
+
+# Herd injected PHP 8.5 configuration.
+export HERD_PHP_85_INI_SCAN_DIR="/Users/yoeriboven/Library/Application Support/Herd/config/php/85/"

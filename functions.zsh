@@ -20,7 +20,7 @@ function db {
 }
 
 function opendb () {
-   [ ! -f .env ] && { echo "No .env file found."; exit 1; }
+   [ ! -f .env ] && { echo "No .env file found."; return 1; }
 
    DB_CONNECTION=$(grep DB_CONNECTION .env | grep -v -e '^\s*#' | cut -d '=' -f 2-)
    DB_HOST=$(grep DB_HOST .env | grep -v -e '^\s*#' | cut -d '=' -f 2-)
@@ -29,10 +29,17 @@ function opendb () {
    DB_USERNAME=$(grep DB_USERNAME .env | grep -v -e '^\s*#' | cut -d '=' -f 2-)
    DB_PASSWORD=$(grep DB_PASSWORD .env | grep -v -e '^\s*#' | cut -d '=' -f 2-)
 
-   DB_URL="${DB_CONNECTION}://${DB_USERNAME}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_DATABASE}"
+   # Laravel's DB_CONNECTION value isn't always a valid URL scheme that
+   # TablePlus registers (e.g. Laravel uses "pgsql", the scheme is "postgresql").
+   case "$DB_CONNECTION" in
+      pgsql) DB_SCHEME="postgresql" ;;
+      *)     DB_SCHEME="$DB_CONNECTION" ;;
+   esac
+
+   DB_URL="${DB_SCHEME}://${DB_USERNAME}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_DATABASE}"
 
    echo "Opening ${DB_URL}"
-   open $DB_URL
+   open "$DB_URL"
 }
 
 function cleanhorizon {

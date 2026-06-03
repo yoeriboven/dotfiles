@@ -1,4 +1,4 @@
-alias php='herd php'
+alias php='/Users/yoeriboven/Library/Application\ Support/Herd/bin/php'
 alias composer='herd composer'
 alias subl='zed'
 
@@ -22,6 +22,7 @@ alias c="clear"
 alias l="ls -alh"
 
 alias ph="phpstorm . && github ."
+alias storm="phpstorm ."
 
 # Directories
 alias dotfiles="zed $HOME/.dotfiles"
